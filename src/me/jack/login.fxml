@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="536.0" prefWidth="774.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="me.jack.scenes.Controller">
+   <center>
+      <VBox alignment="CENTER" prefHeight="400.0" prefWidth="183.0" spacing="30.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="title" alignment="CENTER" contentDisplay="CENTER" prefHeight="42.0" prefWidth="219.0" text="Bot Manager" textFill="#4059a9">
+               <font>
+                  <Font name="Impact" size="34.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="botName" prefHeight="25.0" prefWidth="373.0" promptText="Bot Name">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="botToken" promptText="Bot Token" />
+            <HBox alignment="CENTER_RIGHT">
+               <children>
+                  <Region />
+                  <JFXButton fx:id="button" onAction="#onClick" prefHeight="11.0" prefWidth="88.0" style="-fx-background-color: #4059a9;" text="Log In" textFill="WHITE" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER">
+               <children>
+                  <Label fx:id="errorMessage" alignment="TOP_CENTER" contentDisplay="CENTER" prefHeight="31.0" prefWidth="233.0" textAlignment="RIGHT" textFill="RED">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </VBox>
+   </center>
+   <left>
+      <Region prefHeight="536.0" prefWidth="140.0" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <Region prefHeight="536.0" prefWidth="140.0" BorderPane.alignment="CENTER" />
+   </right>
+</BorderPane>
